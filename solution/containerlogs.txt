@@ -1,0 +1,269 @@
+[root@cf206cbdf67b csvserver]# vi gencsv.sh
+[root@cf206cbdf67b csvserver]# ./gencsv.sh
+16074
+16330
+10322
+20045
+15712
+31160
+13329
+31693
+1035
+9105
+[root@cf206cbdf67b csvserver]# ./gencsv.sh
+16920
+13741
+518
+26274
+11365
+12104
+20929
+4043
+25235
+11309
+[root@cf206cbdf67b csvserver]# vi gencsv.sh
+[root@cf206cbdf67b csvserver]# ./gencsv.sh
+[root@cf206cbdf67b csvserver]# ls
+csvserver  gencsv.sh  inputfile.txt
+[root@cf206cbdf67b csvserver]# cat inputfile.txt
+14615
+[root@cf206cbdf67b csvserver]# vi gencsv.sh
+[root@cf206cbdf67b csvserver]# ./gencsv.sh
+[root@cf206cbdf67b csvserver]# vi gencsv.sh
+[root@cf206cbdf67b csvserver]# cat inputfile.txt
+14615
+20304
+3382
+26836
+18422
+26745
+1418
+18562
+24512
+23728
+20124
+[root@cf206cbdf67b csvserver]# vi gencsv.sh
+[root@cf206cbdf67b csvserver]# ./gencsv.sh 20
+^C
+[root@cf206cbdf67b csvserver]# ./gencsv.sh
+20
+./gencsv.sh: line 4: 20: command not found
+[root@cf206cbdf67b csvserver]# ./gencsv.sh 20
+^C
+[root@cf206cbdf67b csvserver]# vi gencsv.sh
+[root@cf206cbdf67b csvserver]# ./gencsv.sh 20
+^C
+[root@cf206cbdf67b csvserver]# ./gencsv.sh
+20
+[root@cf206cbdf67b csvserver]# cat inputfile.txt
+14615
+20304
+3382
+26836
+18422
+26745
+1418
+18562
+24512
+23728
+20124
+8573
+[root@cf206cbdf67b csvserver]# vi gencsv.sh
+[root@cf206cbdf67b csvserver]# vi gencsv.sh
+[root@cf206cbdf67b csvserver]# ./gencsv.sh
+20
+20
+[root@cf206cbdf67b csvserver]# cat inputfile.txt
+14615
+20304
+3382
+26836
+18422
+26745
+1418
+18562
+24512
+23728
+20124
+8573
+10265
+[root@cf206cbdf67b csvserver]# vi gencsv.sh
+[root@cf206cbdf67b csvserver]# rm inputfile.txt
+rm: remove regular file 'inputfile.txt'? yes
+[root@cf206cbdf67b csvserver]# ./gencsv.sh 20
+^C
+[root@cf206cbdf67b csvserver]# ./gencsv.sh
+20
+20
+[root@cf206cbdf67b csvserver]# cat inputfile.txt
+28764
+[root@cf206cbdf67b csvserver]# vi gencsv.sh
+[root@cf206cbdf67b csvserver]# ./gencsv.sh
+20
+20
+13649
+[root@cf206cbdf67b csvserver]# vi gencsv.sh
+[root@cf206cbdf67b csvserver]# vi gencsv.sh
+[root@cf206cbdf67b csvserver]# ./gencsv.sh
+20
+20
+31302
+30449
+3003
+19059
+10640
+7180
+23733
+31681
+215
+2572
+22964
+26925
+3502
+10428
+18651
+22183
+21389
+13885
+32697
+10045
+[root@cf206cbdf67b csvserver]# cat inputfile.txt
+28764
+22752
+2483
+1093
+15840
+25502
+16007
+28856
+3926
+31405
+20202
+12876
+29468
+12214
+17145
+14634
+18475
+24502
+2406
+14797
+3228
+21163
+[root@cf206cbdf67b csvserver]# rm inputfile.txt
+rm: remove regular file 'inputfile.txt'? yes
+[root@cf206cbdf67b csvserver]# ./gencsv.sh
+20
+20
+226
+10840
+27077
+1491
+26271
+6028
+2778
+31704
+30171
+30553
+17685
+11842
+29530
+29580
+9261
+17542
+19060
+10686
+30443
+16871
+[root@cf206cbdf67b csvserver]# vi gencsv.sh
+[root@cf206cbdf67b csvserver]# ./gencsv.sh
+20
+20
+17879
+12518
+4173
+12891
+13361
+931
+8377
+13649
+24112
+9347
+6614
+17303
+28355
+1583
+17284
+19210
+16816
+31379
+15336
+17595
+[root@cf206cbdf67b csvserver]# ls -lrt
+total 8108
+-rwxrwxr-x 1 root root 8290304 Mar 10 14:35 csvserver
+-rw-r--r-- 1 root root     113 Jun 12 09:05 inputfile.txt
+-rwxrwxrwx 1 root root     129 Jun 12 09:08 gencsv.sh
+-rw-r--r-- 1 root root     473 Jun 12 09:08 chmod
+[root@cf206cbdf67b csvserver]# vi inputfile.txt
+[root@cf206cbdf67b csvserver]# ./gencsv.sh
+5
+5
+19571
+25677
+28247
+28092
+19095
+[root@cf206cbdf67b csvserver]# ./gencsv.sh
+7
+7
+20417
+15872
+23900
+2924
+4096
+23497
+19932
+[root@cf206cbdf67b csvserver]# cat inputfile.txt
+30072
+13551
+10497
+2968
+3974
+7547
+16648
+16501
+8418
+6377
+7225
+6905
+24438
+10931
+18867
+31503
+10592
+14653
+30978
+31546
+[root@cf206cbdf67b csvserver]# vi gencsv.sh
+[root@cf206cbdf67b csvserver]# ./gencsv.sh
+10
+10
+22109
+29031
+15206
+18124
+19726
+15914
+6159
+7077
+19306
+1834
+[root@cf206cbdf67b csvserver]# ls
+chmod  csvserver  gencsv.sh
+[root@cf206cbdf67b csvserver]# vi gencsv.sh
+[root@cf206cbdf67b csvserver]# exit
+exit
+[root@cf206cbdf67b csvserver]# exit
+[root@infracloud solution]#
+

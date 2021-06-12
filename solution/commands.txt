@@ -1,0 +1,147 @@
+  1  hostnamectl set-hostname InfraCloud
+    2  exit
+    3  docker --version
+    4  sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+    5  sudo chmod +x /usr/local/bin/docker-compose
+    6  docker-compose --version
+    7  sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+    8  docker-compose --version
+    9  docker pull infracloudio/csvserver:latest
+   10  systemctl start docker
+   11  systemctl enable docker
+   12  systemctl status docker
+   13  docker pull infracloudio/csvserver:latest
+   14  docker pull prom/prometheus:v2.22.0
+   15  docker images
+   16  pwd
+   17  yum install git
+   18  git --version
+   19  git clone https://github.com/infracloudio/csvserver.git
+   20  ls
+   21  docker images
+   22  docker run -it --name container1 infracloudio/csvserver /bin/bash
+   23  docker run -it --name container1 infracloudio/csvserver /bin/bash &
+   24  docker run -it --name container1 infracloudio/csvserver /bin/bash
+   25  docker ps
+   26  docker ps -a
+   27  docker run container1
+   28  docker login
+   29  docker run container1
+   30  docker images
+   31  docker ps -a
+   32  docker container ls
+   33  docker container ls -a
+   34  docker run container1 /bin/bash
+   35  docker run -it --name container2 infracloudio/csvserver /bin/bash
+   36  docker run -it --name container3 infracloudio/csvserver /bin/bash &
+   37  docker exec -it container1 /bin/bash
+   38  docker start containter1
+   39  docker start container1
+   40  ls
+   41  ps -A |grep 3979
+   42  docker start container1
+   43  ls
+   44  docker exec -it container1 /bin/bash
+   45  docker stop container1
+   46  docker commit container1 con3
+   47  docker run -p 8080:8080 con3
+   48  docker exec -it container1 /bin/bash
+   49  docker start con3
+   50  docker start container1
+   51  docker ps -a
+   52  docker run -it --name con4 -p 8080:8080 /bin/bash
+   53  docker run -it --name con3 -p 8080:8080 /bin/bash
+   54  docker run -it --name con4 -p 8080:8080 /bin/bash con3
+   55  docker run -it --name con4 con3 -p 8080:8080 /bin/bash
+   56  docker run -it --name con4 infracloudio/csvserver -p 8080:8080 /bin/bash
+   57  docker run -it --name con3 infracloudio/csvserver -p 8080:8080 /bin/bash
+   58  docker run -it --name con4 infracloudio/csvserver -p 8080:8080 /bin/bash
+   59  docker run -it con3 --name con4 -p 8080:8080 /bin/bash
+   60  docker run -it  --name con3 con4 -p 8080:8080 /bin/bash
+   61  docker ex -it --name con5 con3 -p 8080:8080 /bin/bash
+   62  docker exec -it  --name con5 con3 -p 8080:8080 /bin/bash
+   63  docker run -d -p 6379:6379 --name con3 con3 9f7e4f26bfb427d42f0659c02cca05a88dc6cce345a7edf7f3ac2f6341b7c12a
+   64  docker run -d -p 6379:6379 --name con3 con4 9f7e4f26bfb427d42f0659c02cca05a88dc6cce345a7edf7f3ac2f6341b7c12a
+   65  docker run -d -p 6379:6379 --name con4 con3 9f7e4f26bfb427d42f0659c02cca05a88dc6cce345a7edf7f3ac2f6341b7c12a
+   66  docker run -d -p 6379:6379 --name con10 con3 9f7e4f26bfb427d42f0659c02cca05a88dc6cce345a7edf7f3ac2f6341b7c12a
+   67  docker ps -a
+   68  docker container rm 6634ada3e05b 198b590b5fc3  0299e73f3389
+   69  docker ps -a
+   70  docker container rm  89b6e7895549 cfaba417f00a
+   71  docker ps -a
+   72  docker run --expose=8080 container1
+   73  docker run --expose=8080 "9f7e4f26bfb427d42f0659c02cca05a88dc6cce345a7edf7f3ac2f6341b7c12a"
+   74  docker ps -a
+   75  docker images
+   76  docker run -d -it --name csv1 -p 8081:8081 con3
+   77  docker ps -a
+   78  docker start csv1
+   79  ls
+   80  docker exec -it csv1 /bin/bash
+   81  ls
+   82  mkdir infra
+   83  cd infra/
+   84  git clone https://github.com/niteenahuja/infracloud.git
+   85  git clone https://github.com/niteenahuja/infracloud.git .
+   86  echo "# infracloud" >> README.md
+   87  git init
+   88  git add README.md
+   89  git commit -m "first commit"
+   90  git branch -M main
+   91  git remote add origin https://github.com/niteenahuja/infracloud.git
+   92  git push -u origin main
+   93  git login
+   94  git login
+   95  git login -u niteenahuja
+   96  git --help
+   97* git log
+   98  git commit -m "first commit"
+   99  git remote add origin username@niteenahuja
+  100  git add
+  101  git add .
+  102  ls
+  103  cd infracloud/
+  104  cd ..
+  105  ls
+  106  vi demo.sh
+  107  git commit -m "first commit"
+  108  git add .
+  109  ls
+  110  git branch -M main
+  111  git add README.md
+  112  git commit -m "first commit"
+  113  git branch -M main
+  114  cd ..
+  115  mkdir test
+  116  cd test
+  117  git clone https://github.com/niteenahuja/infracloud.git
+  118  ls
+  119  cd infracloud/
+  120  ls
+  121  docker imges
+  122  docker images
+  123  ls
+  124  cd sol
+  125  pwd
+  126  ls
+  127  rm solution
+  128  ls
+  129  mkdir solution
+  130  ls
+  131  cd solution/
+  132  docker ps -a
+  133  docker exec -it csv1 /bin/bash
+  134  vi gencsv.sh
+  135  git add .
+  136  git commit -m "first commit "
+  137  git config --global user.email "niteen.ahuja.devops@example.com"
+  138  git config --global user.email "niteen.ahuja.devops@gmail.com"
+  139  git config --global user.name "niteenahuja"
+  140  git commit -m "first commit"
+  141  git push
+  142  docker images
+  143  docker push con3
+  144  docker login
+  145  docker push con3
+  146  ll
+
